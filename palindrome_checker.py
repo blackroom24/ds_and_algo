@@ -15,9 +15,11 @@ We'll also pass strings with special symbols, such as 2A3*3a2, 2A3 3a2, and 2_A3
 
 import re
 
+
 def palindrome_checker(input_string):
-    input_string = re.sub(r'[^0-9a-z]', '', input_string)
-    reverse_string  = input_string[::-1]
+    input_string = re.sub(r"[^0-9a-z]", "", input_string)
+    reverse_string = input_string[::-1]
     return reverse_string == input_string
+
 
 palindrome_checker("_eye")
